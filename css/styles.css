@@ -12,6 +12,7 @@
   --team-section-bgc: #f5f4fa;
   --boder-color: #eeeeee;
   --card-gap: 30px;
+  --hero-bcg-color: #c4c4c4;
 }
 
 h1,
@@ -174,15 +175,30 @@ body {
   margin-right: 50px;
 }
 
+.contact-mail::before {
+  content: '';
+  background-image: url(є);
+}
 /* Hero */
 
 .hero-section {
-  background-color: var(--secondary-background-color);
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
+  background-color: var(--secondary-background-color);
 }
 
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-bcg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/heroimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -303,6 +319,8 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--main-color);
 }
 
 .team-card-text {
@@ -312,6 +330,11 @@ body {
 
 .team-card {
   background-color: var(--main-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Footer */
